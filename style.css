@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(164, 216, 242, 0.995);
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+body{
+    display: flex;
+    flex-direction: column ;
+}
+h1{
+    background-color: rgb(33, 36, 211);
+    color: rgb(243, 215, 173);
+    height: 5rem;
+    line-height: 5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+.choice :hover{
+    height: 160px;
+    width: 160px;
+    border: 3px solid rgb(2, 148, 150);
+    filter: drop-shadow(2px 2px 2px rgb(3, 107, 128));
+    cursor: pointer;
+    
+}
+
+.choice{
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.scoboad{
+    background-color: skyblue;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    align-content: center; 
+    gap: 60px; 
+    font-weight: 900;
+    font-size: 2rem;
+    border: 3px solid rgb(2, 148, 150);
+    filter: drop-shadow(2px 2px 2px rgb(3, 107, 128));
+    margin-bottom: 20px;
+}
+
+#useboad, #compboad{
+    font-size: 2rem;
+    background-color: skyblue;
+}
+
+.boad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: skyblue;
+}
+.boad p{
+    background-color: skyblue;
+}
+
+.msgbox{
+    display: flex;
+    justify-content: center;
+    
+}
+#msg{
+    border: 3px solid rgb(2, 148, 150);
+    filter: drop-shadow(2px 2px 2px rgb(3, 107, 128));
+    width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(38, 38, 156);
+    color:#fff;
+    font-size: larger;
+    border-radius: 6.5px;
+}
+
+
+
+
+@media screen and (max-width: 430px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        width: 100%;
+    }
+    h1 {
+        margin-top: 2px;
+        width: 97%;
+        border-radius: 20px;
+        font-size: 1.8rem; /* Adjusted font size for smaller screens */
+        border: 3px solid rgb(9, 104, 152);
+        filter: drop-shadow(2px 2px 2px rgb(3, 68, 128));  
+    }
+
+    .choices {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px; /* Adjusted margin for smaller screens */
+        margin-left: 0; /* Reset left margin */
+        flex-wrap: wrap; /* Allow choices to wrap on smaller screens */
+    }
+
+    .choice {
+        height: 130px; /* Reduced height for smaller screens */
+        width: 130px; /* Reduced width for smaller screens */
+        border-radius: 50%; /* Circular shape */
+        margin: 10px; /* Adjusted margin for smaller screens */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff; /* Added background color for better visibility */
+    }
+
+    img {
+        height: 110px; /* Reduced image size for smaller screens */
+        width: 110px; /* Reduced image size for smaller screens */
+        border-radius: 50%;
+    }
+
+    .scoboad {
+        width: 100%; /* Set width to 100% for smaller screens */
+        height: 110px;
+        max-width: 300px; /* Limited maximum width for smaller screens */
+        border-radius: 20px;
+        
+    }
+
+    #useboad,
+    #compboad {
+        font-size: 1.5rem; /* Reduced font size for smaller screens */
+    }
+
+    .msgbox {
+        display: flex;
+        justify-content: center;
+    }
+
+    #msg {
+        width: 310px; /* Reduced width for smaller screens */
+        height: 40px; /* Reduced height for smaller screens */
+        font-size: 1rem; /* Reduced font size for smaller screens */
+    }
+}
